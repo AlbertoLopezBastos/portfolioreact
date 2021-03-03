@@ -6,7 +6,7 @@ function Contact() {
   function sendEmail(e) {
     e.preventDefault();
 
-    emailjs.sendForm(process.env.REACT_APP_SERVICE, process.env.REACT_APP_TEMPLATE, e.target, process.env.REACT_APP_USER)
+    emailjs.sendForm(process.env.EMAILJS_SERVICE, process.env.EMAILJS_TEMPLATE, e.target, process.env.EMAILJS_USER)
       .then((result) => {
           console.log(result.text);
           alert('I will contact you soon!');
