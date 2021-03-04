@@ -4,7 +4,7 @@ import Projects from './Projects';
 import Contact from './Contact';
 import Footer from './Footer';
 
-import '../sass/main.scss'
+import '../styles/main.scss'
 
 function App() {
   return (
