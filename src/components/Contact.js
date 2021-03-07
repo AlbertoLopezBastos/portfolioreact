@@ -1,5 +1,6 @@
 import React from 'react';
-import emailjs from 'emailjs-com';
+import emailjs , {init} from 'emailjs-com';
+init(process.env.EMAILJS_USER);
 
 function Contact() {
 
@@ -13,7 +14,7 @@ function Contact() {
           e.target.reset();
       }, (error) => {
           console.log(error.text);
-          
+
       });
   }
 
