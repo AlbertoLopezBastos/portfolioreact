@@ -26,9 +26,9 @@ jobs:
 
    - name: Deploy to GH Pages
      env:
-      EMAILJS_SERVICE: ${{secrets.EMAILJS_SERVICE}}
-      EMAILJS_TEMPLATE: ${{secrets.EMAILJS_TEMPLATE}}
-      EMAILJS_USER: ${{secrets.EMAILJS_USER}}
+      REACT_APP_EMAILJS_SERVICE: ${{secrets.REACT_APP_EMAILJS_SERVICE}}
+      REACT_APP_EMAILJS_TEMPLATE: ${{secrets.REACT_APP_EMAILJS_TEMPLATE}}
+      REACT_APP_EMAILJS_USER: ${{secrets.REACT_APP_EMAILJS_USER}}
      run: |
       git config --global user.name ${{secrets.USER_NAME}}
       git config --global user.email ${{secrets.USER_EMAIL}}

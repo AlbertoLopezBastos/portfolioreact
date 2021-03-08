@@ -1,20 +1,18 @@
 import React from 'react';
-import emailjs , {init} from 'emailjs-com';
-init(process.env.EMAILJS_USER);
+import emailjs from 'emailjs-com';
 
 function Contact() {
 
   function sendEmail(e) {
     e.preventDefault();
 
-    emailjs.sendForm(process.env.EMAILJS_SERVICE, process.env.EMAILJS_TEMPLATE, e.target, process.env.EMAILJS_USER)
-      .then((result) => {
-          console.log(result.text);
-          alert('I will contact you soon!');
-          e.target.reset();
-      }, (error) => {
-          console.log(error.text);
-      });
+    emailjs.sendForm(process.env.REACT_APP_EMAILJS_SERVICE, process.env.REACT_APP_EMAILJS_TEMPLATE, e.target, process.env.REACT_APP_EMAILJS_USER)
+    .then((result) => {
+        alert('I will contact you soon!');
+        e.target.reset();
+    }, (error) => {
+        console.log(error.text);
+    });
   }
 
   return (
@@ -33,4 +31,4 @@ function Contact() {
   )
 }
 
-export default Contact
+export default Contact;
