@@ -6,7 +6,7 @@ function Project(props) {
   return (
       <div className="project">
         <figure className="project__figure">
-          <img className="project__img" src={props.img}/>
+          <img className="project__img" src={props.img} alt="project thumbnail"/>
           <figcaption>
             <h3 className="project__title heading-3 fw-light text-secondary">{props.name}</h3>
             <a className="project__web text-secondary" href={props.website} target="_blank" rel="noreferrer" >Visit Website</a>
