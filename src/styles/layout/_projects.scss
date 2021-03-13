@@ -36,21 +36,9 @@
 .project__img {
   height: 100%;
   width: 100%;
-  background-size:contain;
+  background-size:cover;
   z-index: -1;
   transition: all 0.4s ease-in-out; 
-}
-
-.project__img-1 {
-  background-image: url("../../img/projects/movies.png"); 
-}
-
-.project__img-2 {
-  background-image: url("../../img/projects/mytunes.jpg"); 
-}
-
-.project__img-3 {
-  background-image: url("../../img/projects/netflix-clone.jpg"); 
 }
 
 .project__title, .project__web, .project__github {

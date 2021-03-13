@@ -1,10 +1,12 @@
-import React from 'react'
+import React from 'react';
+
 
 function Project(props) {
+  console.log(props.img)
   return (
       <div className="project">
         <figure className="project__figure">
-          <div className="project__img project__img-1"></div>
+          <img className="project__img" src={props.img}/>
           <figcaption>
             <h3 className="project__title heading-3 fw-light text-secondary">{props.name}</h3>
             <a className="project__web text-secondary" href={props.website} target="_blank" rel="noreferrer" >Visit Website</a>
